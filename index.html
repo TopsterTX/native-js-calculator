@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="max-w-2xl m-auto py-20">
+      <article class="flex flex-col gap-4 py-4 px-4 container">
+        <section class="max-w-full">
+          <div
+            class="w-full h-16 text-3xl py-4 px-4 border-slate-200"
+            id="input"
+          ></div>
+        </section>
+        <section class="flex items-center gap-4" id="operation-button-list">
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="sum"
+          >
+            &plus;
+          </button>
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="minus"
+          >
+            &#8722;
+          </button>
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="multiple"
+          >
+            &#215;
+          </button>
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="divide"
+          >
+            &divide;
+          </button>
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="percent"
+          >
+            &#37;
+          </button>
+        </section>
+        <section class="flex items-center gap-4">
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="clear"
+          >
+            CL
+          </button>
+          <button
+            class="flex-1 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-slate-200"
+            id="backspace"
+          >
+            BS
+          </button>
+          <div class="flex items-center gap-2">
+            <button
+              id="plus-offset"
+              class="border border-slate-200 text-2xl px-3 rounded-md transition-all h-14 hover:bg-slate-200"
+            >
+              &plus;
+            </button>
+            <div id="count-offset" class="text-2xl"></div>
+            <button
+              id="minus-offset"
+              class="border border-slate-200 text-2xl px-3 rounded-md transition-all h-14 hover:bg-slate-200"
+            >
+              &#8722;
+            </button>
+          </div>
+        </section>
+        <section class="grid grid-rows-3 grid-cols-6 gap-4" id="button-list">
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            7
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            8
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            9
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            4
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            5
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            6
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            1
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            2
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            3
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            0
+          </button>
+          <button
+            class="row-span-1 col-span-2 number bg-blue-600 text-white text-2xl rounded-md transition-all h-14 hover:bg-blue-700"
+          >
+            .
+          </button>
+          <button
+            class="row-span-1 col-span-2 border border-slate-200 text-2xl rounded-md transition-all h-14 hover:bg-rose-600 hover:text-white"
+            id="execute"
+          >
+            =
+          </button>
+        </section>
+      </article>
+    </div>
+    <script src="./main.js" type="module"></script>
+    <script src="./commandsController.js" type="module"></script>
+    <script src="./constants.js" type="module"></script>
+    <script src="./state.js" type="module"></script>
+  </body>
+</html>
